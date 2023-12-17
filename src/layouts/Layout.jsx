@@ -4,7 +4,7 @@ function Layout() {
   return (
     <section className="bg-gray-950 text-white">
       <div
-        className="mx-auto max-w-screen-xl h-screen px-5 py-32 lg:flex lg:h-screen lg:items-center"
+        className="mx-auto max-w-screen-xl px-5 py-32 flex h-screen items-center"
       >
         <Outlet />
       </div>
