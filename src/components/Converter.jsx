@@ -1,4 +1,3 @@
-import { CaseLower, CaseUpper } from 'lucide-react'
 import { useState } from 'react'
 
 export function Converter() {
@@ -22,7 +21,7 @@ export function Converter() {
       <textarea
         id='texto'
         rows={6}
-        className='block w-full max-w-4xl rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-500 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+        className='block w-full max-w-4xl rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-slate-100 placeholder:text-gray-600 focus:ring-1 focus:ring-inset focus:ring-slate-100 sm:text-sm sm:leading-6'
         placeholder='Digite aqui o texto que deseja converter...'
         value={inputText}
         onChange={handleTextChange}
@@ -33,15 +32,14 @@ export function Converter() {
           className='flex items-center justify-between px-4 py-2.5 text-base font-semibold bg-blue-500 text-white rounded hover:bg-blue-600'
           onClick={convertToUppercase}
         >
-          Maiúsculo - {' '}
-          <CaseUpper size={24} />
+          Maiúsculo
         </button>
 
         <button
           className='flex items-center justify-between px-4 py-2.5 text-base font-semibold bg-slate-600 text-white rounded hover:bg-slate-500'
           onClick={convertToLowercase}
         >
-          Minúsculo - <CaseLower size={24} />
+          Minúsculo
         </button>
       </div>
     </div>
