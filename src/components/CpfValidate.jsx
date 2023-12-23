@@ -125,5 +125,5 @@ export function CpfValidate() {
       {errorMessage && <p className="text-red-500 pt-4 font-bold">{errorMessage}</p>}
       {successMessage && <p className="text-green-500 pt-4 font-bold">{successMessage}</p>}
     </div >
-  );
+  )
 }
