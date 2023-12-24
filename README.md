@@ -1,8 +1,39 @@
-# React + Vite
+<h1 align="center"> 🧰 Toolbox </h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  A sua caixa de ferramentas para cartórios
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
+
+<p align="center">
+  <img alt="Toolbox preview" src=".github/preview.png" width="100%">
+</p>
+
+## 🚀 Tecnologias
+
+O projeto foi desenvolvido com as seguintes tecnologias:
+
+- JavaScript
+- React JS + Vite
+- React Router DOM
+- TailwindCSS
+
+## 💻 Projeto
+
+<p>Este é um projeto criado com o intuito de reunir ferramentas úteis para o dia a dia de trabalho no meu emprego atual (trabalho em um cartório).</p>
+O projeto conta com as seguintes ferramentas:
+
+- Conversor de Textos (converte textos de maiúscula para minúscula e vice versa - acredite, é muito útil!)
+- Hash de arquivos utilizando **SHA256**
+- Validador de CPF
+- Validador de CNPJ
+
+---
+
+🧑🏾‍💻 Criado e desenvolvido por **Lucas Mota**
