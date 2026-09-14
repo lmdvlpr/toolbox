@@ -55,14 +55,14 @@ export function Home() {
         >
           <img
             src="/toolbox_icon.png"
-            alt="Caixa de ferramentas do Tollbox"
+            alt="Caixa de ferramentas do Toolbox"
             className="mb-8 size-40 object-cover sm:size-48"
           />
           <h1 className="max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
             Ferramentas úteis para o seu dia a dia.
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">
-            O Tollbox reúne ferramentas rápidas para transformar textos, gerar hashes de arquivos e validar documentos, tudo em um só lugar.
+            O Toolbox reúne ferramentas rápidas para transformar textos, gerar hashes de arquivos e validar documentos, tudo em um só lugar.
           </p>
         </motion.div>
       </section>

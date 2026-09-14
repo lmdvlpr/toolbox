@@ -11,7 +11,7 @@ const processedLocally = [
   },
   {
     title: 'Arquivos PDF',
-    description: 'O PDF é lido pelo navegador para gerar o hash SHA-256. O arquivo não é carregado nem armazenado pelo Tollbox.',
+    description: 'O PDF é lido pelo navegador para gerar o hash SHA-256. O arquivo não é carregado nem armazenado pelo Toolbox.',
   },
   {
     title: 'CPF e CNPJ',
@@ -35,7 +35,7 @@ export function Privacy() {
           <p className="text-sm font-medium text-primary">Transparência em primeiro lugar</p>
           <h1 className="mt-1 text-3xl font-semibold tracking-tight sm:text-4xl">Política de Privacidade</h1>
           <p className="mt-3 leading-7 text-muted-foreground">
-            O Tollbox foi criado para oferecer ferramentas simples, privadas e úteis. Esta página explica, em linguagem direta, o que acontece com as informações usadas em cada ferramenta.
+            O Toolbox foi criado para oferecer ferramentas simples, privadas e úteis. Esta página explica, em linguagem direta, o que acontece com as informações usadas em cada ferramenta.
           </p>
         </div>
       </div>
@@ -50,7 +50,7 @@ export function Privacy() {
         </CardHeader>
         <CardContent className="space-y-4 text-sm leading-6 text-muted-foreground">
           <p>
-            O Tollbox não coleta, armazena ou envia para servidores próprios os textos digitados, os números de CPF ou CNPJ informados, nem os arquivos PDF selecionados nas ferramentas.
+            O Toolbox não coleta, armazena ou envia para servidores próprios os textos digitados, os números de CPF ou CNPJ informados, nem os arquivos PDF selecionados nas ferramentas.
           </p>
           <div className="grid gap-3 sm:grid-cols-3">
             {processedLocally.map(({ title, description }) => (
@@ -70,10 +70,10 @@ export function Privacy() {
         </CardHeader>
         <CardContent className="space-y-3 text-sm leading-6 text-muted-foreground">
           <p>
-            A escolha entre os temas claro e escuro é guardada localmente no seu navegador usando <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-xs text-foreground">localStorage</code>. Essa preferência não é enviada ao Tollbox e pode ser removida ao limpar os dados do site no navegador.
+            A escolha entre os temas claro e escuro é guardada localmente no seu navegador usando <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-xs text-foreground">localStorage</code>. Essa preferência não é enviada ao Toolbox e pode ser removida ao limpar os dados do site no navegador.
           </p>
           <p>
-            O Tollbox não utiliza cookies de rastreamento, não possui cadastro de usuários e não implementa ferramentas de analytics na aplicação.
+            O Toolbox não utiliza cookies de rastreamento, não possui cadastro de usuários e não implementa ferramentas de analytics na aplicação.
           </p>
         </CardContent>
       </Card>
@@ -90,7 +90,7 @@ export function Privacy() {
             A aplicação não envia dados das ferramentas para APIs externas. Como acontece com qualquer site, a infraestrutura de hospedagem pode processar registros técnicos necessários para entregar a página, como endereço IP, data e hora do acesso. Esses registros dependem da configuração e das políticas do provedor de hospedagem.
           </p>
           <p>
-            Esta política se refere ao funcionamento do Tollbox e não cobre sites de terceiros acessados por links externos.
+            Esta política se refere ao funcionamento do Toolbox e não cobre sites de terceiros acessados por links externos.
           </p>
         </CardContent>
       </Card>
@@ -101,7 +101,7 @@ export function Privacy() {
         </CardHeader>
         <CardContent className="space-y-3 text-sm leading-6 text-muted-foreground">
           <p>
-            A Lei Geral de Proteção de Dados (LGPD) garante direitos às pessoas titulares de dados pessoais. Como o Tollbox não mantém os dados inseridos nas ferramentas, não há uma base de dados de documentos para consultar ou excluir.
+            A Lei Geral de Proteção de Dados (LGPD) garante direitos às pessoas titulares de dados pessoais. Como o Toolbox não mantém os dados inseridos nas ferramentas, não há uma base de dados de documentos para consultar ou excluir.
           </p>
           <p>
             Se você tiver uma dúvida sobre privacidade ou acreditar que houve algum tratamento relacionado ao site, entre em contato com o responsável:

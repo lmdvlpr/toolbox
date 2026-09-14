@@ -18,7 +18,7 @@ export function Updates() {
             <Sparkles className="size-4" aria-hidden="true" />
             Atualizações da plataforma
           </div>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Novidades do Tollbox</h1>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Novidades do Toolbox</h1>
           <p className="mt-3 max-w-2xl leading-7 text-muted-foreground">
             Um resumo do que foi atualizado nesta versão da plataforma.
           </p>
@@ -41,7 +41,7 @@ export function Updates() {
           <span className="absolute -left-[5px] top-1 size-2.5 rounded-full bg-amber-400 ring-4 ring-background dark:bg-amber-300" aria-hidden="true" />
           <h2 id="updates-title" className="text-xl font-semibold tracking-tight">O que mudou</h2>
           <p className="mt-2 leading-7 text-muted-foreground">
-            As principais melhorias que chegaram ao Tollbox nesta atualização:
+            As principais melhorias que chegaram ao Toolbox nesta atualização:
           </p>
 
           <ul className="mt-8 space-y-8">

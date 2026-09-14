@@ -1,14 +1,14 @@
-# Tollbox
+# Toolbox
 
 Uma caixa de ferramentas simples para resolver tarefas do dia a dia diretamente no navegador.
 
 <p align="center">
-  <img alt="Prévia da página inicial do Tollbox" src=".github/preview.png" width="100%">
+  <img alt="Prévia da página inicial do Toolbox" src=".github/preview.png" width="100%">
 </p>
 
 ## Sobre o projeto
 
-O Tollbox reúne ferramentas rápidas para transformar textos, gerar hashes de arquivos e validar documentos, tudo em um só lugar. A aplicação foi pensada para ser direta, agradável de usar e acessível para qualquer pessoa.
+O Toolbox reúne ferramentas rápidas para transformar textos, gerar hashes de arquivos e validar documentos, tudo em um só lugar. A aplicação foi pensada para ser direta, agradável de usar e acessível para qualquer pessoa.
 
 ## Ferramentas disponíveis
 
@@ -19,13 +19,13 @@ O Tollbox reúne ferramentas rápidas para transformar textos, gerar hashes de a
 
 ## Privacidade
 
-Os textos, CPFs, CNPJs e arquivos usados nas ferramentas são processados localmente no navegador. O Tollbox não envia esses dados para servidores próprios nem os armazena.
+Os textos, CPFs, CNPJs e arquivos usados nas ferramentas são processados localmente no navegador. O Toolbox não envia esses dados para servidores próprios nem os armazena.
 
 A escolha do tema claro ou escuro é salva apenas no navegador para que a preferência seja lembrada no próximo acesso. Consulte a [Política de Privacidade](https://lmdvlpr-toolbox.vercel.app/politica-de-privacidade) para saber mais.
 
 ## Novidades
 
-Nesta versão, o Tollbox recebeu:
+Nesta versão, o Toolbox recebeu:
 
 - novo visual com layout mais organizado e confortável;
 - suporte aos temas claro e escuro;

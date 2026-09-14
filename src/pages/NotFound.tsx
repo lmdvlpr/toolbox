@@ -44,7 +44,7 @@ export function NotFound() {
         </div>
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Essa ferramenta não está na caixa.</h1>
         <p className="mx-auto mt-4 max-w-md text-base leading-7 text-muted-foreground">
-          O endereço que você acessou não aponta para uma ferramenta disponível no Tollbox.
+          O endereço que você acessou não aponta para uma ferramenta disponível no Toolbox.
         </p>
         <Button asChild className="mt-8">
           <Link to="/">
