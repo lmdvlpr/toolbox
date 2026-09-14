@@ -5,9 +5,10 @@ import { Button } from '@/components/ui/button'
 interface CopyButtonProps {
   value: string
   label?: string
+  className?: string
 }
 
-export function CopyButton({ value, label = 'Copiar resultado' }: CopyButtonProps) {
+export function CopyButton({ value, label = 'Copiar resultado', className }: CopyButtonProps) {
   const [status, setStatus] = useState<'idle' | 'copied' | 'error'>('idle')
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
@@ -34,7 +35,7 @@ export function CopyButton({ value, label = 'Copiar resultado' }: CopyButtonProp
 
   return (
     <div className="flex items-center gap-3">
-      <Button type="button" variant="outline" size="sm" onClick={handleCopy} disabled={!value}>
+      <Button type="button" variant="outline" size="sm" className={className} onClick={handleCopy} disabled={!value}>
         {status === 'copied' ? <Check className="size-4" aria-hidden="true" /> : <Copy className="size-4" aria-hidden="true" />}
         {status === 'copied' ? 'Copiado' : label}
       </Button>

@@ -148,9 +148,13 @@ export function Encrypt() {
           <Alert variant="success">
             <AlertTitle>Hash gerado com sucesso</AlertTitle>
             <AlertDescription className="mt-3">
-              <div className="flex flex-col gap-3 rounded-lg bg-background/70 p-3 sm:flex-row sm:items-center sm:justify-between">
-                <code className="min-w-0 flex-1 break-all font-mono text-xs leading-6 text-foreground sm:text-sm">{hash}</code>
-                <CopyButton value={hash} label="Copiar" />
+              <div className="flex flex-col gap-3 rounded-lg border border-emerald-900/10 bg-emerald-950/10 p-3 sm:flex-row sm:items-center sm:justify-between dark:border-emerald-200/10 dark:bg-background/70">
+                <code className="min-w-0 flex-1 break-all font-mono text-xs leading-6 text-emerald-950 sm:text-sm dark:text-emerald-100">{hash}</code>
+                <CopyButton
+                  value={hash}
+                  label="Copiar"
+                  className="border-emerald-700/30 bg-white text-emerald-950 hover:bg-emerald-50 hover:text-emerald-950 dark:border-emerald-200/30 dark:bg-background dark:text-emerald-100 dark:hover:bg-emerald-900/40 dark:hover:text-emerald-50"
+                />
               </div>
             </AlertDescription>
           </Alert>
