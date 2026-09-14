@@ -34,7 +34,7 @@ export function CnpjValidate() {
       icon={Building2}
     >
       <form className="space-y-6" onSubmit={handleSubmit}>
-        <div className="space-y-2">
+        <div className="space-y-3">
           <Label htmlFor="cnpj">CNPJ</Label>
           <Input
             id="cnpj"
