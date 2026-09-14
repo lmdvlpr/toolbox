@@ -26,24 +26,24 @@
 }
 
 .dark {
-  --background: oklch(0.18 0.02 260);
+  --background: #121416;
   --foreground: oklch(0.94 0.012 250);
-  --card: oklch(0.225 0.025 260);
+  --card: #1a1d20;
   --card-foreground: oklch(0.94 0.012 250);
-  --popover: oklch(0.225 0.025 260);
+  --popover: #1a1d20;
   --popover-foreground: oklch(0.94 0.012 250);
   --primary: oklch(0.7 0.14 245);
   --primary-foreground: oklch(0.16 0.03 260);
-  --secondary: oklch(0.29 0.025 260);
+  --secondary: #23272b;
   --secondary-foreground: oklch(0.92 0.012 250);
-  --muted: oklch(0.27 0.02 260);
-  --muted-foreground: oklch(0.72 0.018 250);
-  --accent: oklch(0.3 0.035 250);
+  --muted: #23272b;
+  --muted-foreground: #a1a8b0;
+  --accent: #24282c;
   --accent-foreground: oklch(0.95 0.012 250);
   --destructive: oklch(0.68 0.17 25);
   --destructive-foreground: oklch(0.16 0.03 260);
-  --border: oklch(0.34 0.025 260);
-  --input: oklch(0.36 0.03 260);
+  --border: #2b3034;
+  --input: #34393e;
   --ring: oklch(0.7 0.14 245);
 }
 
