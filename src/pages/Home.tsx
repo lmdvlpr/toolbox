@@ -6,25 +6,25 @@ import { Card, CardContent, CardTitle } from '@/components/ui/card'
 const tools = [
   {
     title: 'Conversor de textos',
-    description: 'Alterne rapidamente entre letras maiúsculas e minúsculas.',
+    description: 'Converta textos entre maiúsculas e minúsculas.',
     to: '/conversor-de-textos',
     icon: Type,
   },
   {
     title: 'Criptografar arquivos',
-    description: 'Gere o hash SHA-256 de um arquivo PDF no próprio navegador.',
+    description: 'Gere hashes SHA-256 de arquivos PDF.',
     to: '/criptografar-arquivos',
     icon: File,
   },
   {
     title: 'Validador de CPF',
-    description: 'Confira o formato e os dígitos verificadores de um CPF.',
+    description: 'Confira os dígitos verificadores do CPF.',
     to: '/validador-de-cpf',
     icon: Fingerprint,
   },
   {
     title: 'Validador de CNPJ',
-    description: 'Valide CNPJs numéricos e alfanuméricos com módulo 11.',
+    description: 'Valide CNPJs numéricos e alfanuméricos.',
     to: '/validador-de-cnpj',
     icon: Building2,
   },
@@ -76,8 +76,8 @@ export function Home() {
                 className="group block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4"
               >
                 <Card className="h-full transition-all duration-200 group-hover:-translate-y-0.5 group-hover:border-primary/50 group-hover:shadow-md">
-                  <CardContent className="flex min-h-28 items-center justify-between gap-5 p-5">
-                    <div className="min-w-0">
+                  <CardContent className="flex h-28 items-center justify-between gap-5 p-5">
+                    <div className="min-w-0 flex-1">
                       <CardTitle className="text-lg">{title}</CardTitle>
                       <p className="mt-2 text-sm leading-6 text-muted-foreground">{description}</p>
                     </div>
