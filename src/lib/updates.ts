@@ -19,10 +19,11 @@ export const updates = [
 
 const updateDate = new Date()
 
-export const formattedUpdateDate = new Intl.DateTimeFormat('pt-BR', {
-  day: 'numeric',
+const formattedMonthAndYear = new Intl.DateTimeFormat('pt-BR', {
   month: 'long',
   year: 'numeric',
 }).format(updateDate)
+
+export const formattedUpdateDate = formattedMonthAndYear.replace(/^./, (character) => character.toUpperCase())
 
 export const updateDateTime = updateDate.toISOString().slice(0, 10)
