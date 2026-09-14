@@ -10,7 +10,7 @@ export function ThemeToggle() {
   }
 
   return (
-    <div className="flex items-center rounded-lg border bg-card p-1" aria-label="Escolher tema" role="group">
+    <div className="flex items-center gap-1 rounded-lg border bg-card p-1" aria-label="Escolher tema" role="group">
       <Button
         type="button"
         variant={theme === 'light' ? 'secondary' : 'ghost'}
