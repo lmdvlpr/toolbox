@@ -15,7 +15,7 @@ export function Router() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="conversor-de-textos" element={<Converter />} />
-        <Route path="criptografar-arquivos" element={<Encrypt />} />
+        <Route path="hash-de-arquivos" element={<Encrypt />} />
         <Route path="validador-de-cpf" element={<CpfValidate />} />
         <Route path="validador-de-cnpj" element={<CnpjValidate />} />
         <Route path="politica-de-privacidade" element={<Privacy />} />

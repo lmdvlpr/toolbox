@@ -58,7 +58,7 @@ export function Encrypt() {
 
   return (
     <ToolPage
-      title="Criptografar arquivos"
+      title="Hash de Arquivos"
       description="Gere o hash SHA-256 de um PDF diretamente no navegador. O arquivo não sai do seu dispositivo."
       icon={File}
     >

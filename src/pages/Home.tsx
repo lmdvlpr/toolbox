@@ -6,15 +6,15 @@ import { Card, CardContent, CardTitle } from '@/components/ui/card'
 
 const tools = [
   {
-    title: 'Conversor de textos',
+    title: 'Conversor de Textos',
     description: 'Converta textos entre maiúsculas e minúsculas.',
     to: '/conversor-de-textos',
     icon: Type,
   },
   {
-    title: 'Criptografar arquivos',
+    title: 'Hash de Arquivos PDF',
     description: 'Gere hashes SHA-256 de arquivos PDF.',
-    to: '/criptografar-arquivos',
+    to: '/hash-de-arquivos',
     icon: File,
   },
   {

@@ -35,7 +35,7 @@ export function CnpjValidate() {
     >
       <form className="space-y-6" onSubmit={handleSubmit}>
         <div className="space-y-5">
-          <Label htmlFor="cnpj">CNPJ</Label>
+          <Label htmlFor="cnpj">Informe o número de CNPJ:</Label>
           <Input
             id="cnpj"
             type="text"
@@ -63,7 +63,7 @@ export function CnpjValidate() {
 
         {isValid && (
           <Alert variant="success">
-            <AlertTitle>CNPJ válido</AlertTitle>
+            <AlertTitle>CNPJ Válido!</AlertTitle>
             <AlertDescription className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <span>O formato e os dígitos verificadores conferem.</span>
               <CopyButton value={cnpj} label="Copiar CNPJ" />
@@ -73,7 +73,7 @@ export function CnpjValidate() {
 
         {hasValidated && validationError && (
           <Alert variant="destructive">
-            <AlertTitle>CNPJ inválido</AlertTitle>
+            <AlertTitle>CNPJ Inválido</AlertTitle>
             <AlertDescription>{validationError}</AlertDescription>
           </Alert>
         )}

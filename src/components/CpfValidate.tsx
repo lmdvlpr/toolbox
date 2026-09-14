@@ -30,7 +30,7 @@ export function CpfValidate() {
     >
       <form className="space-y-6" onSubmit={handleSubmit}>
         <div className="space-y-5">
-          <Label htmlFor="cpf">CPF</Label>
+          <Label htmlFor="cpf">Informe o número de CPF:</Label>
           <Input
             id="cpf"
             type="text"
@@ -55,7 +55,7 @@ export function CpfValidate() {
 
         {isValid === true && (
           <Alert variant="success">
-            <AlertTitle>CPF válido</AlertTitle>
+            <AlertTitle>CPF Válido!</AlertTitle>
             <AlertDescription className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <span>Os dígitos verificadores conferem.</span>
               <CopyButton value={cpf} label="Copiar CPF" />
@@ -65,7 +65,7 @@ export function CpfValidate() {
 
         {isValid === false && (
           <Alert variant="destructive">
-            <AlertTitle>CPF inválido</AlertTitle>
+            <AlertTitle>CPF Inválido</AlertTitle>
             <AlertDescription>Confira os números informados e tente novamente.</AlertDescription>
           </Alert>
         )}

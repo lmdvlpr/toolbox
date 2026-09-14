@@ -16,13 +16,13 @@ export function Converter() {
 
   return (
     <ToolPage
-      title="Conversor de textos"
+      title="Conversor de Textos"
       description="Transforme rapidamente um texto para maiúsculas ou minúsculas, sem sair do navegador."
       icon={Type}
     >
       <form className="space-y-6" onSubmit={handleSubmit}>
         <div className="space-y-5">
-          <Label htmlFor="texto">Texto para converter</Label>
+          <Label htmlFor="texto">Digite abaixo o texto que você deseja converter:</Label>
           <Textarea
             id="texto"
             rows={8}

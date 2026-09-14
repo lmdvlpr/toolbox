@@ -25,7 +25,7 @@ export function ToolPage({ title, description, icon: Icon, children, className }
         className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4"
       >
         <ArrowLeft className="size-4" aria-hidden="true" />
-        Voltar para a home
+        Voltar para à página inicial
       </Link>
 
       <div className="mb-8 flex items-start gap-4">
