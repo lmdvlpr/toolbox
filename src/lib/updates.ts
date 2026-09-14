@@ -12,10 +12,6 @@ export const updates = [
     description: 'Além do CNPJ comum, formado apenas por números, agora a ferramenta também valida CNPJs alfanuméricos, que combinam letras e números.',
   },
   {
-    title: 'Mais privacidade para você',
-    description: 'Os textos, documentos e arquivos usados nas ferramentas são processados no seu próprio dispositivo e não são enviados para a internet.',
-  },
-  {
     title: 'Uma experiência mais completa',
     description: 'O Tollbox ganhou um novo ícone, uma página especial para quando algo não for encontrado e uma Política de Privacidade acessível no rodapé.',
   },
