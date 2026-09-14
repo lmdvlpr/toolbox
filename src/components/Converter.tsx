@@ -21,7 +21,7 @@ export function Converter() {
       icon={Type}
     >
       <form className="space-y-6" onSubmit={handleSubmit}>
-        <div className="space-y-3">
+        <div className="space-y-4">
           <Label htmlFor="texto">Texto para converter</Label>
           <Textarea
             id="texto"

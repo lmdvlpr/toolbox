@@ -29,7 +29,7 @@ export function CpfValidate() {
       icon={Fingerprint}
     >
       <form className="space-y-6" onSubmit={handleSubmit}>
-        <div className="space-y-3">
+        <div className="space-y-4">
           <Label htmlFor="cpf">CPF</Label>
           <Input
             id="cpf"
