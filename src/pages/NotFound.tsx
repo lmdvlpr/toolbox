@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'motion/react'
-import { ArrowLeft, Wrench } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 
@@ -21,23 +21,30 @@ export function NotFound() {
         animate={{ opacity: 1, y: 0 }}
         transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
       >
-        <div className="relative mb-8 inline-flex" aria-hidden="true">
-          <span className="text-[clamp(7rem,22vw,11rem)] font-semibold leading-[0.78] tracking-[-0.12em] text-primary/15">
+        <motion.div
+          className="mb-1"
+          animate={shouldReduceMotion ? undefined : { y: [0, -5, 0], rotate: [-1, 1, -1] }}
+          transition={shouldReduceMotion ? undefined : { duration: 3.2, repeat: Infinity, ease: 'easeInOut' }}
+        >
+          <img
+            src="/open_box.png"
+            alt="Caixa de ferramentas vazia"
+            className="size-40 object-cover drop-shadow-xl sm:size-48"
+            style={{
+              maskImage: 'radial-gradient(circle at center, black 55%, transparent 80%)',
+              WebkitMaskImage: 'radial-gradient(circle at center, black 55%, transparent 80%)',
+            }}
+          />
+        </motion.div>
+
+        <div className="relative mb-5 inline-flex" aria-hidden="true">
+          <span className="text-[clamp(5rem,16vw,8rem)] font-semibold leading-[0.78] tracking-[-0.12em] text-primary/15">
             404
           </span>
-          <motion.div
-            className="absolute -right-2 -top-1 text-primary"
-            animate={shouldReduceMotion ? undefined : { rotate: [10, -2, 10], y: [0, -5, 0] }}
-            transition={shouldReduceMotion ? undefined : { duration: 2.6, repeat: Infinity, ease: 'easeInOut' }}
-          >
-            <Wrench className="size-12 stroke-[1.5] sm:size-14" />
-          </motion.div>
         </div>
-
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Ferramenta não encontrada</p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Essa página saiu da caixa.</h1>
+        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Essa ferramenta não está na caixa.</h1>
         <p className="mx-auto mt-4 max-w-md text-base leading-7 text-muted-foreground">
-          O endereço que você acessou não aponta para uma ferramenta do Tollbox.
+          O endereço que você acessou não aponta para uma ferramenta disponível no Tollbox.
         </p>
         <Button asChild className="mt-8">
           <Link to="/">
