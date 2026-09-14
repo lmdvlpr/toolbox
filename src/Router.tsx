@@ -6,6 +6,7 @@ import { Encrypt } from '@/components/Encrypt'
 import Layout from '@/layouts/Layout'
 import { Home } from '@/pages/Home'
 import { NotFound } from '@/pages/NotFound'
+import { Privacy } from '@/pages/Privacy'
 
 export function Router() {
   return (
@@ -16,6 +17,7 @@ export function Router() {
         <Route path="criptografar-arquivos" element={<Encrypt />} />
         <Route path="validador-de-cpf" element={<CpfValidate />} />
         <Route path="validador-de-cnpj" element={<CnpjValidate />} />
+        <Route path="politica-de-privacidade" element={<Privacy />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
