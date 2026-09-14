@@ -13,7 +13,7 @@ export function Header() {
           <img
             src="/toolbox_icon.png"
             alt=""
-            className="size-10 rounded-xl object-cover shadow-sm transition-transform duration-200 group-hover:scale-[1.03]"
+            className="size-10 object-cover transition-transform duration-200 group-hover:scale-[1.03]"
           />
           <span className="text-lg font-semibold tracking-tight">Tollbox</span>
         </Link>
