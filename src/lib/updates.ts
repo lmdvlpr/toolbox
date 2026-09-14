@@ -1,9 +1,5 @@
 export const updates = [
   {
-    title: 'Mais segurança e estabilidade',
-    description: 'Atualizamos a plataforma para oferecer uma experiência mais segura, estável e preparada para continuar evoluindo.',
-  },
-  {
     title: 'Visual mais agradável',
     description: 'A página ficou mais organizada, confortável de ler e fácil de usar, com transições leves que ajudam na navegação.',
   },
