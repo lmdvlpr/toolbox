@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/toolbox.svg" />
+    <link rel="icon" type="image/png" sizes="1024x1024" href="/toolbox_icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toolbox</title>
+    <meta name="theme-color" content="#f7f8fb" />
+    <meta name="description" content="Ferramentas úteis para o dia a dia do cartório." />
+    <title>Toolbox | Ferramentas para cartórios</title>
+    <script>
+      (() => {
+        const storedTheme = localStorage.getItem('toolbox-theme')
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        const isDark = storedTheme === 'dark' || (!storedTheme && prefersDark)
+        document.documentElement.classList.toggle('dark', isDark)
+        document.documentElement.style.colorScheme = isDark ? 'dark' : 'light'
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
