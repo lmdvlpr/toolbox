@@ -52,13 +52,11 @@ export function Home() {
           className="flex flex-col items-center"
           variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }}
         >
-          <div className="mb-8 overflow-hidden rounded-3xl border bg-card shadow-lg shadow-primary/5">
-            <img
-              src="/toolbox_icon.png"
-              alt="Caixa de ferramentas do Tollbox"
-              className="size-36 object-cover sm:size-44"
-            />
-          </div>
+          <img
+            src="/toolbox_icon.png"
+            alt="Caixa de ferramentas do Tollbox"
+            className="mb-8 size-36 object-cover sm:size-44"
+          />
           <h1 className="max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
             Ferramentas úteis para o dia a dia do cartório.
           </h1>
