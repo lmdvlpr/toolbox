@@ -1,4 +1,4 @@
-import { motion, useReducedMotion } from 'motion/react'
+import { motion } from 'motion/react'
 import { Building2, File, Fingerprint, Type } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import { Card, CardContent, CardTitle } from '@/components/ui/card'
@@ -40,8 +40,6 @@ const cardVariants = {
 }
 
 export function Home() {
-  const shouldReduceMotion = useReducedMotion()
-
   return (
     <motion.div
       className="mx-auto flex w-full max-w-5xl flex-1 flex-col justify-center gap-8 text-center"
@@ -54,13 +52,10 @@ export function Home() {
           className="flex flex-col items-center"
           variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }}
         >
-          <motion.img
+          <img
             src="/toolbox_icon.png"
             alt="Caixa de ferramentas do Tollbox"
             className="mb-8 size-36 object-cover sm:size-44"
-            animate={shouldReduceMotion ? undefined : { y: [0, -4, 0], scale: [1, 1.015, 1] }}
-            transition={shouldReduceMotion ? undefined : { duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-            whileHover={shouldReduceMotion ? undefined : { scale: 1.03 }}
           />
           <h1 className="max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
             Ferramentas úteis para o seu dia a dia.
