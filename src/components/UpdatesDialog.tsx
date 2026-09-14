@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type MouseEvent } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import { CalendarDays, CheckCircle2, Sparkles, X } from 'lucide-react'
+import { CalendarDays, Sparkles, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const updates = [
@@ -77,7 +77,7 @@ export function UpdatesDialog() {
         type="button"
         variant="ghost"
         size="sm"
-        className="text-muted-foreground hover:text-foreground"
+        className="border border-amber-400/50 bg-amber-50/70 text-amber-800 shadow-sm shadow-amber-500/20 hover:bg-amber-100/80 hover:text-amber-900 dark:border-amber-300/30 dark:bg-amber-300/10 dark:text-amber-200 dark:hover:bg-amber-300/20 dark:hover:text-amber-100"
         onClick={() => setIsOpen(true)}
         aria-haspopup="dialog"
         aria-expanded={isOpen}
@@ -97,7 +97,7 @@ export function UpdatesDialog() {
             onMouseDown={handleOverlayMouseDown}
           >
             <motion.div
-              className="flex max-h-[min(90dvh,720px)] w-full max-w-2xl flex-col overflow-hidden rounded-2xl border bg-card text-card-foreground shadow-2xl"
+              className="flex max-h-[min(90dvh,720px)] w-full max-w-2xl flex-col overflow-hidden rounded-2xl border bg-card text-left text-card-foreground shadow-2xl"
               role="dialog"
               aria-modal="true"
               aria-labelledby="updates-title"
@@ -134,18 +134,26 @@ export function UpdatesDialog() {
               </div>
 
               <div className="overflow-y-auto px-5 py-5 sm:px-6">
-                <div className="grid gap-3 sm:grid-cols-2">
-                  {updates.map(({ title, description }) => (
-                    <div key={title} className="rounded-xl border bg-muted/25 p-4">
-                      <div className="flex items-start gap-3">
-                        <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
-                        <div>
-                          <h3 className="font-medium">{title}</h3>
-                          <p className="mt-1.5 text-sm leading-6 text-muted-foreground">{description}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+                <div className="grid gap-3 md:grid-cols-[7rem_minmax(0,1fr)] md:gap-6">
+                  <time className="text-xs font-medium text-muted-foreground md:pt-1 md:text-right" dateTime="2026-09-14">
+                    {formattedDate}
+                  </time>
+                  <div className="relative border-l border-border pl-6">
+                    <span className="absolute -left-[5px] top-1 size-2.5 rounded-full bg-amber-400 ring-4 ring-card dark:bg-amber-300" aria-hidden="true" />
+                    <h3 className="text-lg font-semibold tracking-tight">O que mudou</h3>
+                    <p className="mt-1 text-sm leading-6 text-muted-foreground">
+                      As principais melhorias que chegaram ao Tollbox nesta atualização:
+                    </p>
+                    <ul className="mt-5 space-y-5">
+                      {updates.map(({ title, description }) => (
+                        <li key={title} className="relative pl-5">
+                          <span className="absolute left-0 top-2.5 size-1.5 rounded-full bg-amber-400 dark:bg-amber-300" aria-hidden="true" />
+                          <h4 className="font-medium">{title}</h4>
+                          <p className="mt-1 text-sm leading-6 text-muted-foreground">{description}</p>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </motion.div>
