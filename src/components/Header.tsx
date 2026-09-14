@@ -15,7 +15,7 @@ export function Header() {
             alt=""
             className="size-10 object-cover transition-transform duration-200 group-hover:scale-[1.03]"
           />
-          <span className="text-lg font-semibold tracking-tight">Tollbox</span>
+          <span className="logo-wordmark text-lg font-semibold tracking-tight">Tollbox</span>
         </Link>
 
         <ThemeToggle />
