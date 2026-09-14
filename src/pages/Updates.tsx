@@ -1,7 +1,6 @@
 import { motion } from 'motion/react'
-import { ArrowLeft, CalendarDays, ExternalLink, Sparkles } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import { Button } from '@/components/ui/button'
+import { CalendarDays, ExternalLink, Sparkles } from 'lucide-react'
+import { BackToHomeButton } from '@/components/BackToHomeButton'
 import { formattedUpdateDate, updateDateTime, updates } from '@/lib/updates'
 
 export function Updates() {
@@ -62,12 +61,7 @@ export function Updates() {
       </section>
 
       <div className="flex justify-end">
-        <Button asChild variant="outline">
-          <Link to="/">
-            <ArrowLeft className="size-4" aria-hidden="true" />
-            Voltar para o início
-          </Link>
-        </Button>
+        <BackToHomeButton />
       </div>
     </motion.div>
   )

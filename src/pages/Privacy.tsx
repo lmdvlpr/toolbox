@@ -1,6 +1,5 @@
 import { motion } from 'motion/react'
 import {
-  ArrowLeft,
   Database,
   FileText,
   Fingerprint,
@@ -10,8 +9,7 @@ import {
   ShieldCheck,
   Type,
 } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import { Button } from '@/components/ui/button'
+import { BackToHomeButton } from '@/components/BackToHomeButton'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
 const processedLocally = [
@@ -136,12 +134,7 @@ export function Privacy() {
 
       <div className="flex flex-col gap-3 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
         <p>Última atualização: 14 de setembro de 2026.</p>
-        <Button asChild variant="outline">
-          <Link to="/">
-            <ArrowLeft className="size-4" aria-hidden="true" />
-            Voltar para o início
-          </Link>
-        </Button>
+        <BackToHomeButton />
       </div>
     </motion.div>
   )
