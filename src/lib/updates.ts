@@ -9,7 +9,7 @@ export const updates = [
   },
   {
     title: 'CNPJ com letras e números',
-    description: 'O validador agora confere tanto os CNPJs tradicionais quanto os novos CNPJs que combinam letras e números.',
+    description: 'Além do CNPJ comum, formado apenas por números, agora a ferramenta também valida CNPJs alfanuméricos, que combinam letras e números.',
   },
   {
     title: 'Mais privacidade para você',
