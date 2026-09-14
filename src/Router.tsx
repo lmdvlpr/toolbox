@@ -7,6 +7,7 @@ import Layout from '@/layouts/Layout'
 import { Home } from '@/pages/Home'
 import { NotFound } from '@/pages/NotFound'
 import { Privacy } from '@/pages/Privacy'
+import { Updates } from '@/pages/Updates'
 
 export function Router() {
   return (
@@ -18,6 +19,7 @@ export function Router() {
         <Route path="validador-de-cpf" element={<CpfValidate />} />
         <Route path="validador-de-cnpj" element={<CnpjValidate />} />
         <Route path="politica-de-privacidade" element={<Privacy />} />
+        <Route path="novidades" element={<Updates />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

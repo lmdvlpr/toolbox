@@ -1,7 +1,7 @@
 import { motion } from 'motion/react'
-import { Building2, File, Fingerprint, Type } from 'lucide-react'
-import { NavLink } from 'react-router-dom'
-import { UpdatesDialog } from '@/components/UpdatesDialog'
+import { Building2, File, Fingerprint, Sparkles, Type } from 'lucide-react'
+import { Link, NavLink } from 'react-router-dom'
+import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardTitle } from '@/components/ui/card'
 
 const tools = [
@@ -94,7 +94,17 @@ export function Home() {
       </section>
 
       <div className="-mt-3">
-        <UpdatesDialog />
+        <Button
+          asChild
+          variant="ghost"
+          size="sm"
+          className="border border-amber-400/50 bg-amber-50/70 text-amber-800 shadow-sm shadow-amber-500/20 hover:bg-amber-100/80 hover:text-amber-900 focus-visible:ring-0 focus-visible:outline-2 focus-visible:outline-amber-400 focus-visible:outline-offset-2 dark:border-amber-300/30 dark:bg-amber-300/10 dark:text-amber-200 dark:hover:bg-amber-300/20 dark:hover:text-amber-100 dark:focus-visible:outline-amber-300"
+        >
+          <Link to="/novidades">
+            <Sparkles className="size-4" aria-hidden="true" />
+            Confira as novidades da plataforma
+          </Link>
+        </Button>
       </div>
     </motion.div>
   )
