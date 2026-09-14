@@ -12,7 +12,7 @@ export function Updates() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
     >
-      <header className="flex items-start justify-between gap-6 border-b pb-8">
+      <header className="border-b pb-8">
         <div>
           <div className="flex items-center gap-2 text-sm font-medium text-primary">
             <Sparkles className="size-4" aria-hidden="true" />
@@ -23,12 +23,6 @@ export function Updates() {
             Um resumo do que foi atualizado nesta versão da plataforma.
           </p>
         </div>
-        <Button asChild variant="outline" size="sm" className="shrink-0">
-          <Link to="/">
-            <ArrowLeft className="size-4" aria-hidden="true" />
-            Início
-          </Link>
-        </Button>
       </header>
 
       <section aria-labelledby="updates-title" className="grid gap-4 md:grid-cols-[8rem_minmax(0,1fr)] md:gap-8">
@@ -66,6 +60,15 @@ export function Updates() {
           </ul>
         </div>
       </section>
+
+      <div className="flex justify-end">
+        <Button asChild variant="outline">
+          <Link to="/">
+            <ArrowLeft className="size-4" aria-hidden="true" />
+            Voltar para o início
+          </Link>
+        </Button>
+      </div>
     </motion.div>
   )
 }
