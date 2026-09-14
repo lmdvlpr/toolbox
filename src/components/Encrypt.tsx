@@ -147,9 +147,11 @@ export function Encrypt() {
         {hash && !isLoading && (
           <Alert variant="success">
             <AlertTitle>Hash gerado com sucesso</AlertTitle>
-            <AlertDescription className="mt-3 space-y-4">
-              <code className="block break-all rounded-lg bg-background/70 p-3 font-mono text-xs leading-6 text-foreground sm:text-sm">{hash}</code>
-              <CopyButton value={hash} label="Copiar hash" />
+            <AlertDescription className="mt-3">
+              <div className="flex flex-col gap-3 rounded-lg bg-background/70 p-3 sm:flex-row sm:items-center sm:justify-between">
+                <code className="min-w-0 flex-1 break-all font-mono text-xs leading-6 text-foreground sm:text-sm">{hash}</code>
+                <CopyButton value={hash} label="Copiar" />
+              </div>
             </AlertDescription>
           </Alert>
         )}
