@@ -49,7 +49,7 @@ export function Converter() {
           <Alert>
             <AlertTitle>Resultado pronto</AlertTitle>
             <AlertDescription className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-              <span className="max-h-32 overflow-auto break-words text-foreground">{inputText}</span>
+              <span className="max-h-32 overflow-auto wrap-break-word text-foreground">{inputText}</span>
               <CopyButton value={inputText} label="Copiar texto" />
             </AlertDescription>
           </Alert>
