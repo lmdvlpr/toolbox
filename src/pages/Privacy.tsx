@@ -1,5 +1,15 @@
 import { motion } from 'motion/react'
-import { ArrowLeft, Database, FileCheck2, ShieldCheck } from 'lucide-react'
+import {
+  ArrowLeft,
+  Database,
+  FileText,
+  Fingerprint,
+  Globe2,
+  Scale,
+  Settings2,
+  ShieldCheck,
+  Type,
+} from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -8,14 +18,17 @@ const processedLocally = [
   {
     title: 'Textos',
     description: 'O conteúdo do conversor permanece em memória enquanto a página está aberta e não é enviado para um servidor.',
+    icon: Type,
   },
   {
     title: 'Arquivos PDF',
     description: 'O PDF é lido pelo navegador para gerar o hash SHA-256. O arquivo não é carregado nem armazenado pelo Toolbox.',
+    icon: FileText,
   },
   {
     title: 'CPF e CNPJ',
     description: 'A validação dos documentos acontece no seu dispositivo. Os números informados não são transmitidos pela aplicação.',
+    icon: Fingerprint,
   },
 ]
 
@@ -27,16 +40,16 @@ export function Privacy() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
     >
-      <div className="flex items-start gap-4">
-        <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-          <ShieldCheck className="size-6" aria-hidden="true" />
-        </div>
-        <div>
+      <div className="flex items-start justify-between gap-4">
+        <div className="min-w-0">
           <p className="text-sm font-medium text-primary">Transparência em primeiro lugar</p>
           <h1 className="mt-1 text-3xl font-semibold tracking-tight sm:text-4xl">Política de Privacidade</h1>
           <p className="mt-3 leading-7 text-muted-foreground">
             O Toolbox foi criado para oferecer ferramentas simples, privadas e úteis. Esta página explica, em linguagem direta, o que acontece com as informações usadas em cada ferramenta.
           </p>
+        </div>
+        <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <ShieldCheck className="size-6" aria-hidden="true" />
         </div>
       </div>
 
@@ -53,9 +66,12 @@ export function Privacy() {
             O Toolbox não coleta, armazena ou envia para servidores próprios os textos digitados, os números de CPF ou CNPJ informados, nem os arquivos PDF selecionados nas ferramentas.
           </p>
           <div className="grid gap-3 sm:grid-cols-3">
-            {processedLocally.map(({ title, description }) => (
+            {processedLocally.map(({ title, description, icon: Icon }) => (
               <div key={title} className="rounded-lg border bg-muted/30 p-4">
-                <p className="font-medium text-foreground">{title}</p>
+                <div className="flex items-center gap-2 text-foreground">
+                  <Icon className="size-4 text-primary" aria-hidden="true" />
+                  <p className="font-medium">{title}</p>
+                </div>
                 <p className="mt-2 text-sm leading-6">{description}</p>
               </div>
             ))}
@@ -65,7 +81,10 @@ export function Privacy() {
 
       <Card>
         <CardHeader>
-          <CardTitle>O que é salvo no navegador?</CardTitle>
+          <CardTitle className="flex items-center gap-2">
+            <Settings2 className="size-5 text-primary" aria-hidden="true" />
+            O que é salvo no navegador?
+          </CardTitle>
           <CardDescription>Apenas uma preferência visual, para lembrar sua escolha.</CardDescription>
         </CardHeader>
         <CardContent className="space-y-3 text-sm leading-6 text-muted-foreground">
@@ -81,7 +100,7 @@ export function Privacy() {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <FileCheck2 className="size-5 text-primary" aria-hidden="true" />
+            <Globe2 className="size-5 text-primary" aria-hidden="true" />
             Acesso ao site e terceiros
           </CardTitle>
         </CardHeader>
@@ -97,7 +116,10 @@ export function Privacy() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Seus direitos</CardTitle>
+          <CardTitle className="flex items-center gap-2">
+            <Scale className="size-5 text-primary" aria-hidden="true" />
+            Seus direitos
+          </CardTitle>
         </CardHeader>
         <CardContent className="space-y-3 text-sm leading-6 text-muted-foreground">
           <p>
