@@ -42,8 +42,8 @@ export function Privacy() {
     >
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
-          <p className="text-sm font-medium text-primary">Transparência em primeiro lugar</p>
-          <h1 className="mt-1 text-3xl font-semibold tracking-tight sm:text-4xl">Política de Privacidade</h1>
+          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Política de Privacidade</h1>
+          <p className="mt-2 text-sm font-medium text-primary">Transparência em primeiro lugar</p>
           <p className="mt-3 leading-7 text-muted-foreground">
             O Toolbox foi criado para oferecer ferramentas simples, privadas e úteis. Esta página explica, em linguagem direta, o que acontece com as informações usadas em cada ferramenta.
           </p>
@@ -126,9 +126,7 @@ export function Privacy() {
             A Lei Geral de Proteção de Dados (LGPD) garante direitos às pessoas titulares de dados pessoais. Como o Toolbox não mantém os dados inseridos nas ferramentas, não há uma base de dados de documentos para consultar ou excluir.
           </p>
           <p>
-            Se você tiver uma dúvida sobre privacidade ou acreditar que houve algum tratamento relacionado ao site, entre em contato com o responsável:
-          </p>
-          <p className="font-medium text-foreground">
+            Se você tiver uma dúvida sobre privacidade ou acreditar que houve algum tratamento relacionado ao site, entre em contato com o responsável:{' '}
             <a href="https://www.lmdvlpr.com/" target="_blank" rel="noreferrer" className="underline decoration-primary/50 underline-offset-4 transition-colors hover:text-primary">
               Lucas Mota
             </a>
