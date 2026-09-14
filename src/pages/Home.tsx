@@ -93,7 +93,7 @@ export function Home() {
         </div>
       </section>
 
-      <div className="-mt-3">
+      <div className="mt-2">
         <Button
           asChild
           variant="ghost"
