@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import { Building2, File, Fingerprint, Sparkles, Type } from 'lucide-react'
+import { Building2, Fingerprint, Hash, Sparkles, Type } from 'lucide-react'
 import { Link, NavLink } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardTitle } from '@/components/ui/card'
@@ -15,7 +15,7 @@ const tools = [
     title: 'Hash de Arquivos PDF',
     description: 'Gere hashes SHA-256 de arquivos PDF.',
     to: '/hash-de-arquivos',
-    icon: File,
+    icon: Hash,
   },
   {
     title: 'Validador de CPF',

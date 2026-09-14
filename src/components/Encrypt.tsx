@@ -1,5 +1,5 @@
 import { useRef, useState, type ChangeEvent } from 'react'
-import { File, LoaderCircle, RotateCcw, Upload } from 'lucide-react'
+import { Hash, LoaderCircle, RotateCcw, Upload } from 'lucide-react'
 import { CopyButton } from '@/components/CopyButton'
 import { ToolPage } from '@/components/ToolPage'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
@@ -93,7 +93,7 @@ export function Encrypt() {
     <ToolPage
       title="Hash de Arquivos"
       description="Gere o hash SHA-256 de um PDF diretamente no navegador. O arquivo não sai do seu dispositivo."
-      icon={File}
+      icon={Hash}
     >
       <div className="space-y-6">
         <div className="flex flex-col items-center justify-center gap-4 rounded-xl border border-dashed bg-muted/30 px-6 py-10 text-center">
