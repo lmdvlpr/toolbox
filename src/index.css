@@ -74,47 +74,6 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-@layer components {
-  .logo-wordmark {
-    position: relative;
-    display: inline-block;
-  }
-
-  .logo-wordmark::before,
-  .logo-wordmark::after {
-    content: "";
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .logo-wordmark::before {
-    right: 4%;
-    bottom: -0.35rem;
-    width: 48%;
-    height: 0.12rem;
-    border-radius: 65% 35% 58% 42%;
-    background: color-mix(in oklab, var(--primary) 42%, transparent);
-    transform: rotate(3deg) skewX(-18deg);
-  }
-
-  .logo-wordmark::after {
-    right: 0;
-    bottom: -0.18rem;
-    width: 82%;
-    height: 0.24rem;
-    border-radius: 58% 42% 48% 52%;
-    background: var(--primary);
-    clip-path: polygon(0 32%, 18% 0, 38% 40%, 61% 4%, 100% 28%, 91% 76%, 66% 58%, 40% 100%, 17% 64%, 0 82%);
-    transform: rotate(-1.5deg) skewX(-12deg);
-    transform-origin: right center;
-    transition: transform 200ms ease;
-  }
-
-  .group:hover .logo-wordmark::after {
-    transform: rotate(-2.5deg) skewX(-12deg) translateX(-0.1rem);
-  }
-}
-
 @layer base {
   * {
     border-color: var(--border);
