@@ -1,7 +1,7 @@
 <h1 align="center"> Tollbox </h1>
 
 <p align="center">
-  A sua caixa de ferramentas para cartórios
+  A sua caixa de ferramentas para o dia a dia
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-<p>Este é um projeto criado com o intuito de reunir ferramentas úteis para o dia a dia de trabalho em um cartório.</p>
+<p>Este é um projeto criado com o intuito de reunir ferramentas úteis para as tarefas do dia a dia.</p>
 O projeto conta com as seguintes ferramentas:
 
 - Conversor de Textos (converte textos de maiúscula para minúscula e vice-versa)
