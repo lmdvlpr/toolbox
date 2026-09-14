@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
 import { Building2, File, Fingerprint, Type } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
+import { UpdatesDialog } from '@/components/UpdatesDialog'
 import { Card, CardContent, CardTitle } from '@/components/ui/card'
 
 const tools = [
@@ -91,6 +92,10 @@ export function Home() {
           ))}
         </div>
       </section>
+
+      <div className="-mt-3">
+        <UpdatesDialog />
+      </div>
     </motion.div>
   )
 }
