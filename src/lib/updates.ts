@@ -9,7 +9,11 @@ export const updates = [
   },
   {
     title: 'CNPJ com letras e números',
-    description: 'Além do CNPJ comum, formado apenas por números, agora a ferramenta também valida CNPJs alfanuméricos, que combinam letras e números.',
+    description: 'Além do CNPJ tradicional, formado por 14 números, o Tollbox também valida o novo modelo alfanumérico da Receita Federal, que combina letras e números e mantém dois dígitos verificadores no final. O novo formato é destinado a novas inscrições, enquanto os CNPJs numéricos já existentes continuam válidos. A regra segue a Instrução Normativa RFB nº 2.229/2024.',
+    source: {
+      label: 'Ver referência na Receita Federal',
+      href: 'https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/cnpj-alfanumerico',
+    },
   },
   {
     title: 'Uma experiência mais completa',

@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import { ArrowLeft, CalendarDays, Sparkles } from 'lucide-react'
+import { ArrowLeft, CalendarDays, ExternalLink, Sparkles } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { formattedUpdateDate, updateDateTime, updates } from '@/lib/updates'
@@ -45,11 +45,22 @@ export function Updates() {
           </p>
 
           <ul className="mt-8 space-y-8">
-            {updates.map(({ title, description }) => (
+            {updates.map(({ title, description, source }) => (
               <li key={title} className="relative pl-5">
                 <span className="absolute left-0 top-2.5 size-1.5 rounded-full bg-amber-400 dark:bg-amber-300" aria-hidden="true" />
                 <h3 className="text-lg font-medium">{title}</h3>
                 <p className="mt-2 max-w-2xl leading-7 text-muted-foreground">{description}</p>
+                {source && (
+                  <a
+                    href={source.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-primary underline decoration-primary/40 underline-offset-4 transition-colors hover:text-primary/80"
+                  >
+                    {source.label}
+                    <ExternalLink className="size-3.5" aria-hidden="true" />
+                  </a>
+                )}
               </li>
             ))}
           </ul>
