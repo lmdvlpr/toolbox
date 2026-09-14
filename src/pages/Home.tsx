@@ -55,7 +55,7 @@ export function Home() {
           <img
             src="/toolbox_icon.png"
             alt="Caixa de ferramentas do Tollbox"
-            className="mb-8 size-36 object-cover sm:size-44"
+            className="mb-8 size-40 object-cover sm:size-48"
           />
           <h1 className="max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
             Ferramentas úteis para o seu dia a dia.
